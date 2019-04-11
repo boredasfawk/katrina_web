@@ -435,6 +435,11 @@ hr {
 
 /* Button */
 
+button.information {
+  background: rgba(202, 50, 50, 0.92);
+  color: #fff;
+}
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
@@ -483,7 +488,7 @@ input[type="button"].alt,
 button.alt,
 .button.alt {
   background: #fff;
-  color: #e74c3c;
+  color: rgb(170, 2, 181);
 }
 
 input[type="submit"].fit,
@@ -1055,7 +1060,9 @@ ul.alt li {
   -ms-transition: -ms-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
 }
 
 .columns .image:hover img {
@@ -1356,7 +1363,7 @@ table.alt tbody tr td {
   display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  background: #e74c3c;
+  background: rgba(20, 115, 71, 0.89);
   border-radius: 100%;
   width: 35em;
   height: 35em;
@@ -1390,7 +1397,7 @@ table.alt tbody tr td {
 #header .inner .button {
   -moz-transition: background 1s ease-in-out;
   -webkit-transition: background 1s ease-in-out;
-  -ms-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-iSn-out;
   transition: background 1s ease-in-out;
   margin: 0;
   border-radius: 30px;
@@ -1532,7 +1539,7 @@ table.alt tbody tr td {
   display: inline-block;
   text-decoration: none;
   border-radius: 50% 50% 0 0;
-  background: #e74c3c;
+  background: rgba(20, 115, 71, 0.89);
   width: 3em;
   height: 3em;
   margin-bottom: -1.75em;
@@ -1563,7 +1570,7 @@ table.alt tbody tr td {
   -ms-flex-pack: center;
   position: relative;
   z-index: 10003;
-  background: #e74c3c;
+  background: rgba(20, 115, 71, 0.89);
   padding: 2em;
   height: 20em;
 }
