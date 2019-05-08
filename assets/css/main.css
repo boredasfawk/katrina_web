@@ -538,7 +538,6 @@ button:disabled,
   input[type="submit"],
   input[type="reset"],
   input[type="button"],
-  button,
   .button {
     padding: 0;
   }
@@ -723,6 +722,7 @@ select,
 textarea {
   background: rgba(144, 144, 144, 0.075);
   border-color: rgba(144, 144, 144, 0.25);
+  margin: 1rem 0 1rem 0;
 }
 
 input[type="text"]:focus,
@@ -1331,7 +1331,7 @@ table.alt tbody tr td {
   display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  background: rgba(254, 254, 254, 0.85);
+  background: rgba(254, 254, 254) url("../../images/background.jpeg");
   position: fixed;
   top: 0;
   width: 100%;
@@ -1382,14 +1382,15 @@ table.alt tbody tr td {
 }
 
 #header .inner .content h1 {
-  font-size: 4em;
-  font-family: "Pattaya", sans-serif;
+  font-size: 6em;
+  font-family: "Mr Dafoe", cursive;
   margin: 0 0 0.25em 0;
   color: #fff;
 }
 
 #header .inner .content h2 {
-  font-size: 1.5em;
+  font-size: 3.5em;
+  font-family: "Mr Dafoe", cursive;
   color: #fff;
   margin: 0 0 1em 0;
 }
@@ -1515,6 +1516,18 @@ table.alt tbody tr td {
 }
 
 /* Footer */
+textarea.form-control {
+  height: 5rem;
+}
+
+footer div#padding.content {
+  padding: 0;
+}
+@media screen and (max-width: 480px) {
+  .span8 {
+    width: 100%;
+  }
+}
 
 #footer {
   -moz-transition: bottom 0.2s ease;
@@ -1570,8 +1583,8 @@ table.alt tbody tr td {
   -ms-flex-pack: center;
   position: relative;
   z-index: 10003;
-  background: rgba(20, 115, 71, 0.89);
-  padding: 2em;
+  background: rgb(20, 115, 71);
+  padding: 1em;
   height: 20em;
 }
 
@@ -1580,8 +1593,9 @@ table.alt tbody tr td {
   width: 50%;
   text-align: left;
   color: rgba(255, 255, 255, 0.75);
-  padding: 2em;
+  padding: 0;
   display: inline-block;
+  margin-right: 8rem;
 }
 
 #footer .inner .content h3,

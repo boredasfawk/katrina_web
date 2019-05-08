@@ -48,6 +48,29 @@
         }
       });
     });
+    window.addEventListener("scroll", function(e) {
+      function getOffset(el) {
+        let _x = 0;
+        let _y = 0;
+        while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
+          _x += el.offsetLeft - el.scrollLeft;
+          _y += el.offsetTop - el.scrollTop;
+          el = el.offsetParent;
+        }
+        return { top: _y, left: _x };
+      }
+
+      const projectsTop = getOffset(document.getElementById("top")).top;
+      const header = document.getElementById("header");
+
+      console.log(projectsTop, document.documentElement.scrollTop);
+
+      if (document.documentElement.scrollTop < projectsTop) {
+        header.style.display = "flex";
+      } else {
+        header.style.display = "none";
+      }
+    });
 
     // Footer.
     $footer.each(function() {

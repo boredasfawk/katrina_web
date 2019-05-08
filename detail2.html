@@ -24,12 +24,12 @@
     <!-- Main -->
     <div id="preview" class="vertical">
       <div class="inner">
-        <div class="image fit">
+        <div class="image fit" id="top">
           <img src="images/pic04.jpg" alt="" />
         </div>
         <div class="content">
           <header>
-            <h2>Aliquam gravida felis vel velit accumsan</h2>
+            <h2>About Me</h2>
           </header>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est
@@ -58,7 +58,7 @@
           </p>
         </div>
       </div>
-      <a href="detail1.html" class="nav previous"
+      <a href="index.html" class="nav previous"
         ><span class="fa fa-chevron-left"></span
       ></a>
     </div>
@@ -67,18 +67,37 @@
     <footer id="footer">
       <a href="#" class="info fa fa-info-circle"><span>About</span></a>
       <div class="inner">
-        <div class="content">
-          <h3>Vestibulum hendrerit tortor id gravida</h3>
-          <p>
-            In tempor porttitor nisl non elementum. Nulla ipsum ipsum, feugiat
-            vitae vehicula vitae, imperdiet sed risus. Fusce sed dictum neque,
-            id auctor felis. Praesent luctus sagittis viverra. Nulla erat nibh,
-            fermentum quis enim ac, ultrices euismod augue. Proin ligula nibh,
-            pretium at enim eget, tempor feugiat nulla.
-          </p>
+        <div class="content" id="padding">
+          <article class="contact-form ">
+            <form
+              action="https://formspree.io/oloagency@gmail.com"
+              method="POST"
+              class="form-group"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="name"
+                class="form-control"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="email"
+                class="form-control"
+              />
+              <textarea
+                name="message"
+                placeholder="message"
+                class="form-control"
+                rows="5"
+              ></textarea>
+              <button class="main-btn">Send</button>
+            </form>
+          </article>
         </div>
         <div class="copyright">
-          <h3>Follow me</h3>
+          <h3>Follow Me</h3>
           <ul class="icons">
             <li>
               <a href="#" class="icon fa-twitter"
@@ -101,8 +120,7 @@
               >
             </li>
           </ul>
-          &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>.
-          Images: <a href="https://unsplash.com/">Unsplash</a>.
+          &copy; Design By: <a href="//olonnye.com">OLONNYE.COM</a>
         </div>
       </div>
     </footer>
