@@ -1529,13 +1529,13 @@ footer div#padding.content {
   }
 }
 
-input[type="submit"] {
+.main-btn {
   color: #f04;
   border: 0.1rem solid #f65151;
   font-size: 1.6rem;
 }
 
-input[type="submit"]:hover {
+.main-btn:hover {
   background: #f04;
   color: #fff !important;
 }
