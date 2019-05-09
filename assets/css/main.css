@@ -1363,7 +1363,7 @@ table.alt tbody tr td {
   display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  background: rgba(20, 115, 71, 0.89);
+  background: rgb(20, 115, 71);
   border-radius: 100%;
   width: 35em;
   height: 35em;
